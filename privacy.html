@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MileIO</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #86868b;
+            --accent: #0071e3;
+            --border: #d2d2d7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --text: #f5f5f7;
+                --secondary: #86868b;
+                --accent: #2997ff;
+                --border: #424245;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        h3 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        .meta {
+            color: var(--secondary);
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .summary strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 30px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .checkmark {
+            color: #30d158;
+        }
+        .crossmark {
+            color: #ff453a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>Effective Date:</strong> January 15, 2026 | <strong>Last Updated:</strong> January 28, 2026</p>
+
+    <div class="summary">
+        <strong>The Short Version</strong>
+        We don't collect, store, access, or have any visibility into your data. Your fuel tracking information stays on your device and in your private iCloud account. We literally cannot access your data even if we wanted to.
+    </div>
+
+    <h2>Introduction</h2>
+    <p>Welcome to MileIO. We built this app with one core principle: <strong>your data belongs to you, and only you.</strong></p>
+    <p>MileIO is a privacy-first fuel tracking application for iOS. This Privacy Policy explains how we handle (or rather, don't handle) your personal information.</p>
+
+    <hr>
+
+    <h2>Information We Do NOT Collect</h2>
+    <p>MileIO does not collect, transmit, store, or have access to:</p>
+    <ul>
+        <li><span class="crossmark">❌</span> Your fuel entry data (dates, odometer readings, costs, locations, notes)</li>
+        <li><span class="crossmark">❌</span> Your vehicle information (make, model, year, fuel type)</li>
+        <li><span class="crossmark">❌</span> Your personal information (name, email, phone number, address)</li>
+        <li><span class="crossmark">❌</span> Your location data (GPS coordinates, addresses)</li>
+        <li><span class="crossmark">❌</span> Your photos or camera data (receipt images, odometer photos)</li>
+        <li><span class="crossmark">❌</span> Your usage analytics (how you use the app, features you access)</li>
+        <li><span class="crossmark">❌</span> Your device information (device model, OS version, unique identifiers)</li>
+        <li><span class="crossmark">❌</span> Your Apple ID or iCloud information</li>
+    </ul>
+    <p><strong>Why?</strong> Because MileIO is designed to be completely serverless from our perspective. All your data lives exclusively in two places:</p>
+    <ol>
+        <li><strong>Locally on your device</strong> - Stored in the app's private container</li>
+        <li><strong>In your private iCloud account</strong> - Synced via Apple's CloudKit Private Database</li>
+    </ol>
+    <p>We have zero backend servers, no third-party analytics, no advertising SDKs, and no data collection infrastructure.</p>
+
+    <hr>
+
+    <h2>How Your Data is Stored</h2>
+
+    <h3>Local Storage</h3>
+    <p>When you add vehicles or log fuel entries, this data is stored locally on your device in the app's private sandbox. This data is protected by iOS security features and is inaccessible to other apps.</p>
+
+    <h3>iCloud Sync</h3>
+    <p>MileIO uses <strong>Apple CloudKit Private Database</strong> to sync your data across your Apple devices. Here's what that means:</p>
+    <ul>
+        <li><strong>Encrypted in Transit:</strong> Data is encrypted when syncing between your devices and iCloud</li>
+        <li><strong>Encrypted at Rest:</strong> Data is encrypted when stored in iCloud</li>
+        <li><strong>Access Control:</strong> Only you can access your private database using your Apple ID credentials</li>
+        <li><strong>Apple's Privacy:</strong> Apple's privacy policy applies to iCloud data storage</li>
+        <li><strong>No MileIO Access:</strong> We (the developers) have zero access to your private CloudKit database</li>
+    </ul>
+
+    <hr>
+
+    <h2>Camera and Photo Usage</h2>
+    <p>MileIO requests camera access for two OCR (Optical Character Recognition) features:</p>
+    <ol>
+        <li><strong>Receipt Scanning:</strong> To capture and extract fuel data from gas station receipts</li>
+        <li><strong>Odometer Scanning:</strong> To read your vehicle's dashboard odometer display</li>
+    </ol>
+    <p><strong>Important Privacy Notes:</strong></p>
+    <ul>
+        <li><strong>On-Device Processing:</strong> All OCR processing happens locally on your device using Apple's Vision framework</li>
+        <li><strong>No Image Storage:</strong> Receipt and odometer photos are NOT saved, stored, or transmitted anywhere</li>
+        <li><strong>No Cloud Processing:</strong> Images are never sent to our servers or any third-party services</li>
+        <li><strong>Immediate Deletion:</strong> After text extraction, the camera data is immediately discarded</li>
+        <li><strong>You Control Access:</strong> You can revoke camera permission at any time in iOS Settings</li>
+    </ul>
+
+    <hr>
+
+    <h2>Third-Party Services</h2>
+    <p>MileIO does <strong>not</strong> use any third-party services, including:</p>
+    <ul>
+        <li><span class="crossmark">❌</span> Analytics platforms (no Google Analytics, Mixpanel, etc.)</li>
+        <li><span class="crossmark">❌</span> Crash reporting services (no Crashlytics, Sentry, etc.)</li>
+        <li><span class="crossmark">❌</span> Advertising networks (no ads, period)</li>
+        <li><span class="crossmark">❌</span> Social media SDKs (no Facebook SDK, Twitter SDK, etc.)</li>
+        <li><span class="crossmark">❌</span> Payment processors (the app is free, no in-app purchases)</li>
+        <li><span class="crossmark">❌</span> Backend servers (completely serverless)</li>
+    </ul>
+    <p>The only Apple service we use is <strong>CloudKit</strong>, which operates under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+    <hr>
+
+    <h2>Data Sharing</h2>
+    <p><strong>We do not share your data with anyone. Ever.</strong></p>
+    <p>Because we don't have access to your data, we couldn't share it even if we wanted to. The only way your data leaves your device is when <strong>you</strong> explicitly choose to:</p>
+    <ul>
+        <li><strong>Export to CSV:</strong> You can export your fuel data to a CSV file and share it via the iOS share sheet</li>
+        <li><strong>Generate PDF Reports:</strong> You can create PDF reports of your fuel history</li>
+        <li><strong>Sync to Your Other Devices:</strong> Data syncs to your other Apple devices via your private iCloud account</li>
+    </ul>
+
+    <hr>
+
+    <h2>Your Rights and Controls</h2>
+    <p>You have complete control over your data:</p>
+
+    <h3>Access Your Data</h3>
+    <p>Your data is always accessible within the MileIO app. You can view all your vehicles and fuel entries at any time.</p>
+
+    <h3>Export Your Data</h3>
+    <p>Use the "Export to CSV" or "Generate PDF Report" features in Settings to download your complete fuel history.</p>
+
+    <h3>Delete Your Data</h3>
+    <ul>
+        <li><strong>Delete Fuel Entries:</strong> Swipe left on any entry and tap Delete</li>
+        <li><strong>Delete Vehicles:</strong> Swipe left on any vehicle and tap Delete (this also deletes all associated fuel entries)</li>
+        <li><strong>Delete All Data:</strong> Uninstall the app and delete your iCloud data by going to iPhone Settings > [Your Name] > iCloud > Manage Storage > MileIO > Delete Data</li>
+    </ul>
+
+    <hr>
+
+    <h2>Children's Privacy</h2>
+    <p>MileIO does not knowingly collect any information from anyone, including children under 13. The app is rated 4+ and is safe for all ages. Since we don't collect any data, COPPA (Children's Online Privacy Protection Act) does not apply.</p>
+
+    <hr>
+
+    <h2>International Users</h2>
+    <ul>
+        <li><strong>GDPR Compliance (EU):</strong> Since we don't collect personal data, GDPR obligations don't apply</li>
+        <li><strong>CCPA Compliance (California):</strong> We don't sell personal information (we don't have any to sell)</li>
+        <li><strong>Privacy Laws:</strong> We comply with all international privacy laws by simply not collecting any data</li>
+    </ul>
+
+    <hr>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. If we make material changes, we'll notify you by posting the updated policy in the app and updating the "Last Updated" date at the top.</p>
+
+    <hr>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or MileIO's privacy practices:</p>
+    <p><strong>Email:</strong> <a href="mailto:juergen+mileio@klaassen.consulting">juergen+mileio@klaassen.consulting</a></p>
+
+    <hr>
+
+    <h2>Summary</h2>
+    <ul>
+        <li><span class="checkmark">✅</span> <strong>What MileIO Knows About You:</strong> Nothing.</li>
+        <li><span class="checkmark">✅</span> <strong>What We Do With Your Data:</strong> Nothing, because we don't have it.</li>
+        <li><span class="checkmark">✅</span> <strong>Who We Share Your Data With:</strong> No one, because we don't have it.</li>
+    </ul>
+    <p>Your fuel tracking data is yours and yours alone. We built MileIO this way intentionally, and we'll never change that fundamental promise.</p>
+
+    <div class="footer">
+        <p>Copyright © 2026 MileIO. All rights reserved.</p>
+        <p>This Privacy Policy is effective as of January 15, 2026.</p>
+    </div>
+</body>
+</html>
