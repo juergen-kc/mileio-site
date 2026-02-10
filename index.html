@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MileIO - Smart Fuel Tracking for iOS</title>
+    <title>MileIO - Smart Fuel & Maintenance Tracking for iOS</title>
     <style>
         :root {
             --bg: #ffffff;
@@ -74,6 +74,52 @@
             font-size: 0.9em;
             color: var(--secondary);
         }
+        .screenshots {
+            display: flex;
+            gap: 20px;
+            max-width: 900px;
+            margin-bottom: 40px;
+            overflow-x: auto;
+            padding: 20px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .phone-frame {
+            flex-shrink: 0;
+            width: 180px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(128, 128, 128, 0.2);
+        }
+        @media (prefers-color-scheme: dark) {
+            .phone-frame {
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+        .phone-frame img {
+            width: 100%;
+            display: block;
+        }
+        .screenshots-label {
+            width: 100%;
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        .badges {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .badges img {
+            height: 50px;
+        }
         .links {
             display: flex;
             gap: 20px;
@@ -109,7 +155,7 @@
 <body>
     <div class="logo">⛽</div>
     <h1>MileIO</h1>
-    <p class="tagline">Smart fuel tracking for gas & electric vehicles</p>
+    <p class="tagline">Track fuel, maintenance & true cost of ownership</p>
 
     <div class="features">
         <div class="feature">
@@ -133,15 +179,40 @@
             <p>Your data, synced across all devices</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">🔒</div>
-            <h3>Privacy First</h3>
-            <p>No servers, no tracking, just you</p>
+            <div class="feature-icon">🔧</div>
+            <h3>Maintenance Tracking</h3>
+            <p>Log oil changes, tires, brakes & more with reminders</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">🆓</div>
-            <h3>Free Forever</h3>
-            <p>No ads, no subscriptions, no catch</p>
+            <div class="feature-icon">🗣️</div>
+            <h3>Siri Shortcuts</h3>
+            <p>Log entries with your voice or from the Shortcuts app</p>
         </div>
+    </div>
+
+    <div class="screenshots">
+        <p class="screenshots-label">See it in action</p>
+        <div class="phone-frame">
+            <img src="images/ss-vehicles.png" alt="My Vehicles" loading="lazy">
+        </div>
+        <div class="phone-frame">
+            <img src="images/ss-addentry.png" alt="Add Entry" loading="lazy">
+        </div>
+        <div class="phone-frame">
+            <img src="images/ss-history.png" alt="Entry History" loading="lazy">
+        </div>
+        <div class="phone-frame">
+            <img src="images/ss-dashboard.png" alt="Dashboard" loading="lazy">
+        </div>
+    </div>
+
+    <div class="badges">
+        <a href="https://apps.apple.com/app/mileio-plus/id123456789">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+        <a href="https://www.producthunt.com/products/mileio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-mileio" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1077428&theme=neutral&t=1770761591436" alt="MileIO on Product Hunt" width="250" height="54">
+        </a>
     </div>
 
     <div class="links">
@@ -149,15 +220,9 @@
         <a href="/terms">Terms of Service</a>
     </div>
 
-    <div class="app-store">
-        <a href="https://apps.apple.com/app/mileio-plus/id123456789">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-        </a>
-    </div>
-
     <div class="footer">
-        <p>© 2026 MileIO. All rights reserved.</p>
-        <p>Made with ❤️ for drivers everywhere</p>
+        <p>Free forever. No ads, no subscriptions. Privacy first — your data stays on your device and iCloud.</p>
+        <p style="margin-top: 10px;">© 2026 MileIO. All rights reserved.</p>
     </div>
 </body>
 </html>
