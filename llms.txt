@@ -1,4 +1,40 @@
-# juergen-kc.github.io llms.txt
+# MileIO
 
-- [Vehicle Cost Tracker](https://juergen-kc.github.io/mileio-site): Manage and analyze vehicle fuel, maintenance, and ownership costs
+> MileIO is a free iOS app for tracking fuel costs, EV charging, and vehicle maintenance. It supports gas, diesel, hybrid, and electric vehicles with iCloud sync, receipt scanning via on-device OCR, Siri Shortcuts, and interactive widgets. No accounts, no ads, no subscriptions — all data stays on-device and in the user's private iCloud.
 
+- **App Store**: [MileIO on the App Store](https://apps.apple.com/us/app/mileio/id6758225631)
+- **Bundle ID**: com.ecodrive.app
+- **Price**: Free (no in-app purchases)
+- **Platform**: iOS / iPadOS
+- **Current version**: 1.7.0
+
+## Features
+
+- Track fuel fill-ups (gallons/liters) and EV charging sessions (kWh) with cost, odometer, and location
+- Receipt scanning: capture gas station receipts and auto-extract fuel data using on-device Vision OCR
+- Odometer scanning: read dashboard odometer via camera
+- Dashboard with MPG/L per 100km/mi per kWh trends, cost-per-mile analysis, and monthly spending
+- Maintenance tracking: oil changes, tires, brakes, inspections with reminders and due-date alerts
+- Multiple vehicle support with per-vehicle analytics
+- iCloud sync via CloudKit private database (encrypted, zero server access by developer)
+- CSV export and PDF report generation
+- Siri Shortcuts for hands-free fuel logging
+- Interactive home screen and Lock Screen widgets
+- Battery state-of-charge (SoC%) tracking for EVs
+- Unit preferences: MPG, L/100km, mi/kWh, km/kWh
+- CarPlay integration (pending entitlement approval): nearby station finder, one-tap draft entries
+
+## Privacy
+
+MileIO collects zero user data. There are no analytics, no crash reporting SDKs, no advertising, and no backend servers. All data is stored locally on the device and optionally synced via the user's private iCloud account using Apple CloudKit. The developer has no access to any user data. Camera access is used only for on-device OCR processing — images are never stored or transmitted.
+
+## Pages
+
+- [Homepage](https://juergen-kc.github.io/mileio-site/): App overview, screenshots, and download link
+- [Privacy Policy](https://juergen-kc.github.io/mileio-site/privacy): Full privacy policy
+- [Terms of Service](https://juergen-kc.github.io/mileio-site/terms): Terms of service
+
+## Optional
+
+- [Product Hunt](https://www.producthunt.com/products/mileio): Community listing and reviews
+- **Contact**: juergen+mileio@klaassen.consulting
